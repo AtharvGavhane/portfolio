@@ -1,0 +1,24 @@
+/* Floating pill navigation */
+.pill {
+  position: fixed; top: 12px; left: var(--pad); right: var(--pad);
+  z-index: 60;
+  display: flex; align-items: center; gap: 0.9rem;
+  padding: 8px 16px 8px 8px;
+  background: var(--white);
+  border-radius: 14px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
+}
+.pill__logo {
+  flex: none; width: 34px; height: 34px;
+  display: grid; place-items: center;
+  background: var(--black); color: var(--white);
+  border-radius: 8px;
+  font-family: var(--font-display); font-style: italic; font-weight: 700;
+}
+.pill__tag {
+  flex: 1; min-width: 0;
+  font-size: 0.75rem; font-weight: 600; text-transform: uppercase;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.pill__link { flex: none; font-size: 0.75rem; font-weight: 700; }
+.pill__link:hover { text-decoration: underline; }
